@@ -12,6 +12,7 @@
 
 ```
 sudo apt install vim vim-runtime
+sudo apt install curl
 ```
 
 ### 設定ファイルの編集など
