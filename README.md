@@ -17,7 +17,7 @@ sudo apt install vim vim-runtime
 ### 設定ファイルの編集など
 
 ```
-https://github.com/omas-public/settings
+git clone https://github.com/omas-public/settings
 ```
 
 ### チュータの起動
