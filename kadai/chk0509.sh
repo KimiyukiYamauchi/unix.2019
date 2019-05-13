@@ -1,4 +1,4 @@
-echo '学籍番号:'
+echo -n '学籍番号: '
 read no
 cd $no/0509
 bash 050901.sh
