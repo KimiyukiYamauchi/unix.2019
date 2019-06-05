@@ -23,13 +23,10 @@
     - 060404.sh
 - unix1.shの改造、case文を利用してgit add/commit/pushを個別に  
 実行できるようにする
-    - 1) git add -i
-    - 2) git commit
-    - 3) git push
-    - *) スクリプトの終了
-
-
-
+    - git add -i
+    - git commit
+    - git push
+    - スクリプトの終了
 
 ## 05/28
 
