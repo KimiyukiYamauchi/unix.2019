@@ -6,7 +6,5 @@
 
 ## 路線/駅名検索API
 
-- curl 'http://express.heartrails.com/api/json?method=getLines&prefecture=沖縄県'
-- curl 'http://express.heartrails.com/api/json?method=getStations&line=沖縄ゆいレール'
-- curl 'http://express.heartrails.com/api/json?method=getStations&line=沖縄ゆいレール' 2> /dev/null | jq '.'
-- curl 'http://express.heartrails.com/api/json?method=getStations&line=沖縄ゆいレール' 2> /dev/null | jq '.response.station[].name'
+- curl 'http://express.heartrails.com/api/json?method=getLines&prefecture=沖縄県' 2> /dev/null | jp '.response.line[]'
+- curl 'http://express.heartrails.com/api/json?`method=getStations&line=沖縄ゆいレール' 2> /dev/null | jq '.response.station[].name'
