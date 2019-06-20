@@ -8,3 +8,7 @@
 
 - curl 'http://express.heartrails.com/api/json?method=getLines&prefecture=沖縄県' 2> /dev/null | jq '.response.line[]'
 - curl 'http://express.heartrails.com/api/json?method=getStations&line=沖縄ゆいレール' 2> /dev/null | jq '.response.station[].name'
+
+## 外部リンクのリンク切れチェック
+
+- curl https://www.it-college.ac.jp | grep -o 'href="[^"]*"' | grep http | sed 's/^href=//' | awk '{print "curl -f",$1,"> /dev/null"}' | tee list | bash -e
