@@ -126,6 +126,7 @@ _________ /usr/local/bin/lpic/lpic.sh
 1. ドット (.)
 1. source
 1. bash
+1. コマンドは特に必要ない
 
 ## 問15
 指定したファイルの内容をページ単位で閲覧ができるコマンドとして適切  
@@ -173,6 +174,18 @@ _________ /usr/local/bin/lpic/lpic.sh
 1. uniq
 1. fmt
 1. cut
+
+## 問21
+findコマンドの実行結果とエラー出力を、いずれもfind.logファイルに保存しようと  
+しています。  
+実行すべき適切なコマンドを選択してください。
+
+1. find / -name core > find.log
+1. find / -name core 2>> find.log
+1. find / -name core 2>&1 | find.log
+1. find / -name core > find.log 2>&1
+1. find / -name core 2>&1 find.log
+
 
 ## 問22
 指定したサイズでファイルを分割するコマンドを選びなさい。
@@ -250,7 +263,7 @@ aptコマンドで、パッケージリストの情報を最新版に更新し�
 以下の下線部に当てはまるものを記述しなさい。
 
 ``` bash
-apt _________
+sudo apt _________
 ```
 
 ## 問30
